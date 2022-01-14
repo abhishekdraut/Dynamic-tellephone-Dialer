@@ -4,12 +4,13 @@ import KeyboardBackspaceSharpIcon from "@mui/icons-material/KeyboardBackspaceSha
 import { useState, useEffect } from "react";
 function Dialer(params) {
   const [number, setNumber] = useState("");
-
+  // Function for adding the number to string when you clik on any number.
   function handleAdd(num) {
     if (num != null) {
       setNumber(number.concat(num));
     }
   }
+  // Function for removing the number from string when you clik on backkey.
   function handleRemove() {
     setNumber(number.slice(0, -1));
     console.log(number);
@@ -17,8 +18,10 @@ function Dialer(params) {
   return (
     <div className="dialer_Background">
       <div className="dialer_card_inner">
+        {/* dynamic number container */}
         <div className="diler_item_row number">{number}</div>
 
+        {/* Five rows of numbers and btns*/}
         <div className="diler_item_row row1">
           <div className="diler_item">
             <div

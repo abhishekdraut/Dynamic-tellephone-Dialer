@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
-body {
+body{
   margin: 0px;
   box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 .dialer_Background {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 690px;
+  height: 750px;
   background-color: #5ea3f1;
 }
 .dialer_card_inner {
